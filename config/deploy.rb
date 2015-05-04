@@ -26,9 +26,9 @@ set :scm, :git
 # set :unicorn_config, "#{current_path}/config/unicorn.rb"
 # set :unicorn_pid, "#{current_path}/tmp/pids/unicorn.pid"
 
-# role :web, "107.20.204.18"                          # Your HTTP server, Apache/etc
-# role :app, "107.20.204.18"                          # This may be the same as your `Web` server
-# role :db,  "107.20.204.18", :primary => true # This is where Rails migrations will run
+role :web, "52.24.70.229"                          # Your HTTP server, Apache/etc
+role :app, "52.24.70.229"                          # This may be the same as your `Web` server
+role :db,  "52.24.70.229", :primary => true # This is where Rails migrations will run
 
 # #before "deploy:assets:precompile", "deploy:symlinks"
 # #after 'deploy:update_code', 'deploy:symlinks'
