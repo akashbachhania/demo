@@ -16,7 +16,8 @@
 #
 default: &default
   adapter: mysql
-  encoding: unicode
+  #encoding: unicode
+  encoding: utf8
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
@@ -27,7 +28,7 @@ default: &default
 development:
   <<: *default
   database: demo_development
-
+  encoding: utf8
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
